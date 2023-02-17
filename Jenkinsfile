@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh './pes2ug20cs008'
+                sh './pes2ug20cs008.exe'
                 echo 'Test Completed'
             }
         }
