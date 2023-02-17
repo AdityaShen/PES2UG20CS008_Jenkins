@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh 'make -C main'
+                sh ''g++ -o a.exe helloa.cpp'
                 echo 'Build Completed'
             }
         }
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh '/var/jenkins_home/workspace/PES2UG20CS008-1/main/hello_exec'
+                sh './a.exe'
                 echo 'Test Completed'
             }
         }
