@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh ''g++ helloa.cpp'
+                sh 'g++ helloa.cpp'
                 echo 'Build Completed'
             }
         }
