@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh ''g++ -o a.exe helloa.cpp'
+                sh ''g++ helloa.cpp'
                 echo 'Build Completed'
             }
         }
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh './a.exe'
+                sh './a'
                 echo 'Test Completed'
             }
         }
