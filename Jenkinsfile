@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build'
-                sh 'g++ -o pes2ug20cs008.exe working.cpp'
+                sh 'g++ -o pes2ug20cs008 working.cpp'
                 echo 'Build Completed'
             }
         }
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh './pes2ug20cs008.exe'
+                sh './pes2ug20cs008'
                 echo 'Test Completed'
             }
         }
