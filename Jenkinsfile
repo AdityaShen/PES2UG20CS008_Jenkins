@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting Testing'
-                sh './a'
+                sh './a.exe'
                 echo 'Test Completed'
             }
         }
